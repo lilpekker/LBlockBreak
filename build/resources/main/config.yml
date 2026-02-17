@@ -1,0 +1,42 @@
+# Block Break Money System Configuration
+
+# Messages (can be customized)
+messages:
+  no_block_in_hand: "&cElinizde bir block yok!"
+  block_added: "&aBlock başarıyla eklendi: %block% - %money% para"
+  block_removed: "&aBlock başarıyla kaldırıldı: %block%"
+  block_not_found: "&cBu block kayıtlı değil!"
+  block_already_exists: "&cBu block zaten kayıtlı!"
+  money_set: "&aBlock için para güncellendi: %block% - %money% para"
+  config_reloaded: "&aConfig başarıyla yenilendi!"
+  money_received: "&e%money% akce verildi!"
+  no_blocks_registered: "&cKayıtlı block bulunmuyor!"
+  block_list_header: "&6Kayıtlı Blocklar:"
+  block_list_item: "&7- %block%: %money% para"
+  invalid_number: "&cGeçersiz para miktarı!"
+  no_permission: "&cBu komutu kullanmak için yetkiniz yok!"
+  no_earn_permission: "&cPara kazanmak için yetkiniz yok!"
+  no_economy: "&eBlock kırıldı! (%money% akce - ekonomi sistemi yok)"
+
+# VIP Multipliers System
+vip:
+  enabled: true
+  # VIP seviyeleri ve çarpanları
+  multipliers:
+    vip:
+      permission: "blockbreak.vip"
+      multiplier: 1.5
+    vip+:
+      permission: "blockbreak.vip+"
+      multiplier: 2.0
+    mvip:
+      permission: "blockbreak.mvip"
+      multiplier: 3.0
+    mvip+:
+      permission: "blockbreak.mvip+"
+      multiplier: 4.0
+
+# Block rewards data
+blocks:
+  # Example: STONE: 10.0
+  # Format: MATERIAL_NAME: money_amount

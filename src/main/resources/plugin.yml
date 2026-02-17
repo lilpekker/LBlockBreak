@@ -1,0 +1,32 @@
+name: LBlockBreak
+version: '1.0'
+main: org.LBlockBreak.lBlockBreak.LBlockBreak
+api-version: '1.21'
+prefix: LC
+authors: [ lilpekker ]
+softdepend: [Vault]
+commands:
+  bb:
+    description: Block break money system commands
+    usage: /bb [add|remove|set|list|reload]
+    aliases: [blockbreak]
+    permission: blockbreak.admin
+permissions:
+  blockbreak.admin:
+    description: Admin commands for block break system
+    default: op
+  blockbreak.earn:
+    description: Permission to earn money from breaking blocks
+    default: true
+  blockbreak.vip:
+    description: VIP 1.5x multiplier
+    default: false
+  blockbreak.vip+:
+    description: VIP+ 2.0x multiplier
+    default: false
+  blockbreak.mvip:
+    description: MVIP 3.0x multiplier
+    default: false
+  blockbreak.mvip+:
+    description: MVIP+ 4.0x multiplier
+    default: false
